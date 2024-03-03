@@ -1,5 +1,11 @@
+import { FirstElement } from '../components/FirstElement/FirstElement';
 import { Header } from '../components/Header/Header';
 
 export const HomePage = () => {
-  return <Header />;
+  return (
+    <div>
+      <Header />
+      <FirstElement />
+    </div>
+  );
 };
