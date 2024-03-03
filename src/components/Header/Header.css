@@ -1,0 +1,17 @@
+.header-container {
+  background: linear-gradient(to right, #085a7a, #252c30, #849204);
+  padding: 10px 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-name {
+  color: #fff;
+  margin-left: 10px;
+}
+
+.header-logo {
+  margin-right: 10px;
+  color: #fff;
+}
