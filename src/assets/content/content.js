@@ -1,0 +1,38 @@
+export const idealContent = {
+  ua: {
+    title: 'ІДЕАЛ',
+    description: [
+      'Основні переваги застосування РВС "Ідеал"',
+      'Ремонтно-відновлювальний склад "Ідеал" - це структура, що складається з низки нано-компонентів найвищої якості, які постачають провідні виробники Європи.',
+      'Застосування в механічних контактних вузлах дає змогу домогтися ефекту капітального ремонту, без розбирання, в штатному процесі експлуатації. В результаті обробки зміцнюється і відновлюється геометрія поверхні (до 50 мкм за один цикл), утворюється високоміцний зносостійкий шар. Індивідуальне припрацювання контактних пар дає змогу досягти якості поверхонь, яка більш ніж у 20 разів перевищує поліровану нержавійку. Такого результату неможливо досягти жодними відомими видами механічної обробки.',
+      'Відсутність негативних чинників подібних матеріалів перших поколінь, як-от відшарування, тріщинуватість, неконтрольоване нарощування в одній точці тощо дає змогу безпечно застосовувати "Ідеал" там, де це потрібно.',
+      'У результаті застосування РВС дає змогу досягти ефекту нового вузла, знижується гучність, поліпшуються динамічні характеристики, спостерігається економія пального, значно подовжується період експлуатації, агрегати стають менш вибагливі до якості мастил, які є у нас.....',
+      'Все це призводить до суттєвої ЕКОНОМІЇ коштів на утримання вузлів і агрегатів.',
+      'В даний час багато виробників прагнуть випускати свою продукцію зі скороченим терміном експлуатації, роблячи її, по суті, одноразовою, застосування РВС "Ідеал" дозволяє багаторазово продовжити термін служби вузлів і агрегатів автомобіля, підшипників, редукторів, втулок, зубчастих пар тощо, зокрема, і промислового призначення.',
+    ],
+  },
+  ru: {
+    title: 'ИДЕАЛ',
+    description: [
+      'Основные преимущества применения РВС "Идеал"',
+      'Ремонтно восстановительный состав "Идеал" это структура которая состоит из ряда нано-компонентов высочайшего качества, поставляемых ведущими производителями Европы.',
+      'Применение в механических контактных узлах позволяет добиться эффекта капитального ремонта, без разборки, в штатном процессе эксплуатации. В результате обработки упрочняется и восстанавливается геометрия поверхности (до 50мкн. за один цикл) образуется высокопрочный износостойкий слой. Индивидуальная приработка контактных пар позволяет достичь качества поверхностей более чем в 20 раз превышающей полированную нержавейку. Такого результата невозможно достичь никакими известными видами механической обработки.',
+      'Отсутствие отрицательных факторов подобных материалов первых поколений, как то отслоение, трещиноватость, неконтролируемое наращивание в одной точке и т.д. позволяет безопасно применять "Идеал" там где это нужно.',
+      'В результате применение РВС позволяет достичь эффекта нового узла, снижается шумность, улучшаются динамические характеристики, наблюдается экономия топлива, значительно продлевается период эксплуатации, агрегаты становятся менее требовательны к качеству смазок, которые у нас.....',
+      'Всё это приводит к существенной ЭКОНОМИИ средств на содержание узлов и агрегатов.',
+      'В настоящее время многие производители стремятся выпускать свою продукцию с сокращённым сроком эксплуатации, делая её по сути одноразовой, применение РВС "Идеал" позволяет многократно продлить срок службы узлов и агрегатов автомобиля, подшипников, редукторов, втулок, зубчатых пар и т.п. в том числе и промышленного назначения.',
+    ],
+  },
+  en: {
+    title: 'IDEAL',
+    description: [
+      'Main advantages of using RBC "Ideal"',
+      'Repair and restoration composition "Ideal" is a structure that consists of a number of nano-components of the highest quality, supplied by leading manufacturers in Europe.',
+      'Application in mechanical contact units allows to achieve the effect of overhaul, without disassembly, in normal operation process. As a result of treatment, the surface geometry is hardened and restored (up to 50 microns in one cycle) and a high-strength wear-resistant layer is formed. Individual processing of contact pairs allows to achieve surface quality more than 20 times higher than polished stainless steel. Such a result cannot be achieved by any known types of mechanical processing.',
+      'The absence of negative factors of similar materials of the first generations, such as delamination, cracking, uncontrolled buildup in one point, etc. allows you to safely apply "Ideal" where it is necessary.',
+      'As a result, the application of RWS allows to achieve the effect of a new unit, reduces noise, improves dynamic characteristics, fuel economy is observed, significantly extends the period of operation, units become less demanding to the quality of lubricants, which we have...',
+      'All this results in a substantial SAVING of maintenance costs for units and assemblies.',
+      'Nowadays, many manufacturers tend to produce their products with shortened service life, making it essentially disposable, the use of RVS "Ideal" allows you to repeatedly extend the service life of car units and assemblies, bearings, gearboxes, bushings, gear pairs, etc., including industrial purposes.',
+    ],
+  },
+};
