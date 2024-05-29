@@ -1,11 +1,22 @@
-import './App.css';
+import { Route, Routes } from 'react-router-dom';
+import { lazy } from 'react';
 
-import { HomePage } from './pages/HomePage';
+import './App.css';
+import SharedLayout from './components/SharedLayout/SharedLayout';
+
+const NotFoundPage = lazy(() => import('./pages/NotFoundPage'));
+const IdealPage = lazy(() => import('./pages/IdealPage'));
 
 function App() {
   return (
     <>
-      <HomePage />
+      <Routes>
+        <Route path="/" element={<SharedLayout />}>
+          <Route index element={<IdealPage />} />
+          <Route path="/ideal" element={<IdealPage />} />
+          <Route path="/*" element={<NotFoundPage />} />
+        </Route>
+      </Routes>
     </>
   );
 }

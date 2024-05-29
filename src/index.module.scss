@@ -1,0 +1,28 @@
+@import '/src/styles/breakpoints';
+@import '/src/styles/mixins';
+@import '/src/styles/colors';
+@import './styles/fonts.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $background-dark;
+  color: $text-dark;
+
+  font-family: 'Istok Web', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: -0.02em;
+  line-height: 1.5;
+
+  scroll-behavior: smooth;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
