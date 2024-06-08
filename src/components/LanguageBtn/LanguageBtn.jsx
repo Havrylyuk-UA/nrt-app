@@ -1,15 +1,23 @@
-import css from './LanguageBtn.module.scss';
+import { useDispatch, useSelector } from "react-redux";
+import css from "./LanguageBtn.module.scss";
+import { toggleLanguage } from "../../redux/userSlice";
+import { selectLanguage } from "../../redux/selectors";
 
-const LanguageBtn = ({ onLanguageChange, langCont }) => {
-  const handleButtonClick = () => {
-    const newLanguage = langCont === 'ua' ? 'en' : 'ua';
-    onLanguageChange(newLanguage);
+const LanguageBtn = () => {
+  const dispatch = useDispatch();
+  const language = useSelector(selectLanguage);
+
+  const changeLanguage = () => {
+    if (language === "en") {
+      return dispatch(toggleLanguage("ua"));
+    }
+    dispatch(toggleLanguage("en"));
   };
 
-  const buttonText = langCont === 'ua' ? 'Language' : 'Мова';
+  const buttonText = language === "ua" ? "Language" : "Мова";
 
   return (
-    <button className={css.language_btn} onClick={handleButtonClick}>
+    <button className={css.language_btn} onClick={changeLanguage}>
       {buttonText}
     </button>
   );

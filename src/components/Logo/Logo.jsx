@@ -1,8 +1,12 @@
-import css from './Logo.module.scss';
+import { useSelector } from "react-redux";
+import { selectLanguage } from "../../redux/selectors";
+import css from "./Logo.module.scss";
 
-const Logo = ({ langCont }) => {
+const Logo = () => {
+  const language = useSelector(selectLanguage);
+
   const title =
-    langCont === 'ua'
+    language === "ua"
       ? 'ТОВ "Нові Технології Ремонтів"'
       : 'LLC "New Repair Technologies"';
 

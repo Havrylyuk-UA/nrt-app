@@ -1,5 +1,5 @@
 {
-  "name": "ideal-app",
+  "name": "nrt-app",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -12,9 +12,13 @@
   "dependencies": {
     "@reduxjs/toolkit": "^2.2.5",
     "clsx": "^2.1.1",
+    "modern-normalize": "^2.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.23.1"
+    "react-redux": "^9.1.2",
+    "react-router-dom": "^6.23.1",
+    "redux-persist": "^6.0.0",
+    "sass": "^1.77.4"
   },
   "devDependencies": {
     "@types/react": "^18.2.56",
@@ -24,7 +28,6 @@
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.5",
-    "sass": "^1.77.2",
     "vite": "^5.1.4"
   }
 }
