@@ -1,0 +1,48 @@
+@import '/src/styles/breakpoints';
+@import '/src/styles/mixins';
+@import '/src/styles/colors';
+@import '/src/styles/fonts.scss';
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  gap: 20px;
+
+  padding: 10px 20px;
+
+  @include media-rules(tablet) {
+    padding: 18px 24px;
+  }
+
+  @include media-rules(desktop) {
+    padding: 18px 32px;
+    margin-left: auto;
+  }
+
+  .about {
+    width: 400px;
+    .about_p {
+    }
+  }
+
+  .contact_us {
+  }
+
+  .footer_form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    form {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      gap: 8px;
+    }
+  }
+}
