@@ -1,4 +1,4 @@
-import css from './Footer.module.scss';
+import css from "./Footer.module.scss";
 
 const Footer = () => {
   return (
@@ -15,19 +15,10 @@ const Footer = () => {
         </p>
       </div>
       <div className={css.contact_us}>
-        Contct US:
+        Contact US:
         <div>Telegram</div>
         <div>Viber</div>
         <div>WhatsApp</div>
-      </div>
-      <div className={css.footer_form}>
-        <form>
-          <label>
-            <input type="text" />
-          </label>
-          <textarea name="" id=""></textarea>
-          <button type="submit">Submit</button>
-        </form>
       </div>
     </div>
   );

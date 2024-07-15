@@ -1,7 +1,7 @@
-@import '/src/styles/breakpoints';
-@import '/src/styles/mixins';
-@import '/src/styles/colors';
-@import '/src/styles/fonts.scss';
+@import "/src/styles/breakpoints";
+@import "/src/styles/mixins";
+@import "/src/styles/colors";
+@import "/src/styles/fonts.scss";
 
 .main_container {
   padding: 10px 20px;
@@ -27,7 +27,7 @@
 }
 
 .main_table_title {
-  font-family: 'Istok Web', sans-serif;
+  font-family: "Istok Web", sans-serif;
   font-weight: 700;
   font-size: 24px;
   letter-spacing: -0.02em;
@@ -49,8 +49,9 @@
 }
 
 .main_img {
-  width: 460px;
-  height: 520px;
+  width: clamp(250px, 45%, 460px);
+  min-height: 310px;
+  max-height: 520px;
   border-radius: 10px;
 }
 
@@ -62,7 +63,7 @@
 }
 
 .main_title {
-  font-family: 'Istok Web', sans-serif;
+  font-family: "Istok Web", sans-serif;
   font-weight: 700;
   font-size: 24px;
   letter-spacing: -0.02em;
@@ -84,6 +85,7 @@
 
 .main_gif_cont {
   margin: 0 auto;
-  width: 650px;
-  height: 380px;
+  width: clamp(270px, 45%, 650px);
+  min-height: 280px;
+  max-height: 380px;
 }
