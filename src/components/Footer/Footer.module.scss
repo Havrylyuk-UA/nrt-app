@@ -67,6 +67,23 @@
       @include media-rules(tablet) {
         flex-direction: column;
       }
+
+      div {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        gap: 8px;
+
+        cursor: pointer;
+
+        transition: transform 0.3s ease;
+
+        &:hover {
+          color: $button-hover-dark;
+          transform: scale(1.1);
+        }
+      }
     }
   }
 }

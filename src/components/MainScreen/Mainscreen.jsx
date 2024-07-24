@@ -6,7 +6,7 @@ import { selectLanguage } from "../../redux/selectors";
 import engine from "../../assets/img/engine.png";
 import outer_bearing from "../../assets/img/photo_1.jpg";
 import bearing from "../../assets/img/photo_2.jpg";
-import gif from "../../assets/video/videoplayback-_online-video-cutter.com_.gif";
+import gif from "../../assets/gif/videoplayback-_online-video-cutter.com_.gif";
 
 const Mainscreen = () => {
   const language = useSelector(selectLanguage);

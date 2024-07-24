@@ -1,5 +1,7 @@
 import css from "./Footer.module.scss";
 
+import sprite from "../../assets/sprite.svg";
+
 const Footer = () => {
   return (
     <div className={css.footer_container}>
@@ -18,9 +20,26 @@ const Footer = () => {
         <div className={css.contact_us}>
           Contact US:
           <div className={css.social}>
-            <div>Telegram</div>
-            <div>Viber</div>
-            <div>WhatsApp</div>
+            <div>
+              <svg className={css.telegram} width="32" height="32">
+                <use xlinkHref={`${sprite}#icon-telegram-svgrepo-com`}></use>
+              </svg>
+              Telegram
+            </div>
+            <div>
+              <svg className={css.viber} width="32" height="32">
+                <use xlinkHref={`${sprite}#icon-viber-color-svgrepo-com`}></use>
+              </svg>
+              Viber
+            </div>
+            <div>
+              <svg className={css.whatsapp} width="32" height="32">
+                <use
+                  xlinkHref={`${sprite}#icon-whatsapp-color-svgrepo-com`}
+                ></use>
+              </svg>
+              WhatsApp
+            </div>
           </div>
         </div>
       </div>
