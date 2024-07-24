@@ -3,13 +3,10 @@
 @import "/src/styles/colors";
 @import "/src/styles/fonts.scss";
 
-.footer {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+.footer_container {
+  margin: 0 auto;
 
-  gap: 20px;
-
+  max-width: 1440px;
   padding: 10px 20px;
 
   @include media-rules(tablet) {
@@ -18,31 +15,58 @@
 
   @include media-rules(desktop) {
     padding: 18px 32px;
-    margin-left: auto;
   }
 
-  .about {
-    width: 45vw;
-    .about_p {
+  .footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    flex-direction: column-reverse;
+
+    gap: 20px;
+
+    @include media-rules(tablet) {
+      flex-direction: row;
     }
   }
 
-  .contact_us {
-  }
-
-  .footer_form {
+  .about {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 
-    form {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
+    gap: 8px;
 
+    width: clamp(280px, 65%, 650px);
+
+    .about_p {
+      text-align: center;
+
+      @include media-rules(tablet) {
+        text-align: start;
+      }
+    }
+  }
+
+  .contact_us {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+
+    @include media-rules(tablet) {
+    }
+
+    .social {
+      display: flex;
       gap: 8px;
+
+      @include media-rules(tablet) {
+        flex-direction: column;
+      }
     }
   }
 }

@@ -8,7 +8,7 @@ const SharedLayout = () => {
     <>
       <Header />
       <Suspense fallback={<div>Loading...</div>}>{/* <Outlet /> */}</Suspense>
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 };
