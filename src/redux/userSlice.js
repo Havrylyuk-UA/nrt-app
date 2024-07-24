@@ -2,7 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
   theme: "dark",
-  language: "en",
+  language: "ua",
 };
 
 export const userSlice = createSlice({
