@@ -1,1 +1,0 @@
-import{j as t}from"./index-BMKI-ea9.js";const o=()=>t.jsx("div",{style:{paddingTop:"50px",width:"100%",display:"flex",flexDirection:"column",alignItems:"center",justifyContent:"center"},children:t.jsx("p",{style:{marginTop:"20px",marginBottom:"20px",fontWeight:"900",fontSize:"34px",color:"#FFF"},children:"Page is Not found"})});export{o as default};
