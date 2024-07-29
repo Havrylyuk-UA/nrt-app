@@ -30,26 +30,16 @@ const Footer = () => {
         <div className={css.contact_us}>
           Contact US:
           <div className={css.social}>
-            <div>
-              <svg className={css.telegram} width="32" height="32">
-                <use xlinkHref={`${sprite}#icon-telegram-svgrepo-com`}></use>
-              </svg>
-              Telegram
-            </div>
-            <div>
-              <svg className={css.viber} width="32" height="32">
-                <use xlinkHref={`${sprite}#icon-viber-color-svgrepo-com`}></use>
-              </svg>
-              Viber
-            </div>
-            <div>
-              <svg className={css.whatsapp} width="32" height="32">
-                <use
-                  xlinkHref={`${sprite}#icon-whatsapp-color-svgrepo-com`}
-                ></use>
-              </svg>
-              WhatsApp
-            </div>
+            <svg className={css.telegram} width="32" height="32">
+              <use xlinkHref={`${sprite}#icon-telegram`}></use>
+            </svg>
+            <svg className={css.viber} width="32" height="32">
+              <use xlinkHref={`${sprite}#icon-viber`}></use>
+            </svg>
+            <svg className={css.whatsapp} width="32" height="32">
+              <use xlinkHref={`${sprite}#icon-whatsapp`}></use>
+            </svg>
+            +3 (8033) 333 33 33
           </div>
         </div>
       </div>

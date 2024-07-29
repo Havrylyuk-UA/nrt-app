@@ -3,6 +3,7 @@ import css from "./ThemeBtn.module.scss";
 import clsx from "clsx";
 import { toggleTheme } from "../../redux/userSlice";
 import { selectTheme } from "../../redux/selectors";
+import sprite from "../../assets/sprite.svg";
 
 const ThemeBtn = () => {
   const dispatch = useDispatch();
@@ -15,7 +16,7 @@ const ThemeBtn = () => {
     dispatch(toggleTheme("dark"));
   };
 
-  const buttonText = theme === "dark" ? "Light" : "Dark";
+  const icon = theme === "dark" ? "icon-idea-on" : "icon-idea-off";
 
   return (
     <button
@@ -25,7 +26,9 @@ const ThemeBtn = () => {
       })}
       onClick={changeTheme}
     >
-      {buttonText}
+      <svg className={css.whatsapp} width="24" height="24">
+        <use xlinkHref={`${sprite}#${icon}`}></use>
+      </svg>
     </button>
   );
 };
