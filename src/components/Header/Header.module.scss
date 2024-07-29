@@ -3,11 +3,9 @@
 @import "/src/styles/colors";
 
 .header_container {
-  background: inherit;
   padding: 10px 20px;
 
   width: 100%;
-  box-shadow: 0px 4px 8px rgba(251, 215, 132, 0.7);
 
   @include media-rules(tablet) {
     padding: 18px 24px;
@@ -37,4 +35,22 @@
       margin-left: auto;
     }
   }
+}
+
+// Dark
+
+.header_container_dark {
+  background-color: $background-dark;
+  color: $text-dark;
+
+  box-shadow: 0px 4px 8px $border_shadow_dark;
+}
+
+// Light
+
+.header_container_light {
+  background-color: $background-light;
+  color: $text-light;
+
+  box-shadow: 0px 4px 8px $border_shadow_light;
 }

@@ -1,10 +1,20 @@
 import css from "./Footer.module.scss";
+import clsx from "clsx";
 
 import sprite from "../../assets/sprite.svg";
+import { useSelector } from "react-redux";
+import { selectTheme } from "../../redux/selectors";
 
 const Footer = () => {
+  const theme = useSelector(selectTheme);
+
   return (
-    <div className={css.footer_container}>
+    <div
+      className={clsx(css.footer_container, {
+        [css.footer_container_dark]: theme === "dark",
+        [css.footer_container_light]: theme === "light",
+      })}
+    >
       <div className={css.footer}>
         <div className={css.about}>
           About:
